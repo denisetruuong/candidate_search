@@ -27,10 +27,6 @@ const SavedCandidates = () => {
             JSON.parse(localStorage.getItem("savedCandidates") || "[]").map((candidate: Candidate, index:number) => (
               <tr key={index}>
                 <td>
-                  <img src={candidate.avatar_url} alt="avatar" />
-                </td>
-                <td>
-                  <a src={candidate.html_url}>{candidate.login}</a>
                 </td>
                 <td>{candidate.location}</td>
                 <td>{candidate.email}</td>
